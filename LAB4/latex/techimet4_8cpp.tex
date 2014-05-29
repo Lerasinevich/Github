@@ -1,0 +1,122 @@
+\hypertarget{techimet4_8cpp}{\section{techimet4/techimet4.cpp File Reference}
+\label{techimet4_8cpp}\index{techimet4/techimet4.\-cpp@{techimet4/techimet4.\-cpp}}
+}
+{\ttfamily \#include \char`\"{}stdafx.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}stdio.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}malloc.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$cstdlib$>$}\\*
+{\ttfamily \#include $<$locale.\-h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structtree}{tree}
+\begin{DoxyCompactList}\small\item\em структура дерева \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structtree}{tree} $\ast$ \hyperlink{techimet4_8cpp_ac01b68f66327b6bb7a25a9fec7c3925f}{stree} (\hyperlink{structtree}{tree} $\ast$root, \hyperlink{structtree}{tree} $\ast$r, char info)
+\begin{DoxyCompactList}\small\item\em добавление нового элемента \end{DoxyCompactList}\item 
+void \hyperlink{techimet4_8cpp_a5509068e638d76cffd6dbaf2db803ebe}{inorder} (struct \hyperlink{structtree}{tree} $\ast$root)
+\begin{DoxyCompactList}\small\item\em симметрический обход \end{DoxyCompactList}\item 
+void \hyperlink{techimet4_8cpp_ac279165114df7d6b00e0fc47650ab9c6}{preorder} (struct \hyperlink{structtree}{tree} $\ast$root)
+\begin{DoxyCompactList}\small\item\em прямой обход \end{DoxyCompactList}\item 
+void \hyperlink{techimet4_8cpp_af7f75cd6819f4f5850907e288c04f906}{postorder} (struct \hyperlink{structtree}{tree} $\ast$root)
+\begin{DoxyCompactList}\small\item\em обратный обход \end{DoxyCompactList}\item 
+int \hyperlink{techimet4_8cpp_a353674c5af92be7fb389265cde4e5e03}{\-\_\-tmain} (int argc, \-\_\-\-T\-C\-H\-A\-R $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{techimet4_8cpp_a353674c5af92be7fb389265cde4e5e03}{\index{techimet4.\-cpp@{techimet4.\-cpp}!\-\_\-tmain@{\-\_\-tmain}}
+\index{\-\_\-tmain@{\-\_\-tmain}!techimet4.cpp@{techimet4.\-cpp}}
+\subsubsection[{\-\_\-tmain}]{\setlength{\rightskip}{0pt plus 5cm}int \-\_\-tmain (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{\-\_\-\-T\-C\-H\-A\-R $\ast$}]{argv\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{techimet4_8cpp_a353674c5af92be7fb389265cde4e5e03}
+\hypertarget{techimet4_8cpp_a5509068e638d76cffd6dbaf2db803ebe}{\index{techimet4.\-cpp@{techimet4.\-cpp}!inorder@{inorder}}
+\index{inorder@{inorder}!techimet4.cpp@{techimet4.\-cpp}}
+\subsubsection[{inorder}]{\setlength{\rightskip}{0pt plus 5cm}void inorder (
+\begin{DoxyParamCaption}
+\item[{struct {\bf tree} $\ast$}]{root}
+\end{DoxyParamCaption}
+)}}\label{techimet4_8cpp_a5509068e638d76cffd6dbaf2db803ebe}
+
+
+симметрический обход 
+
+inorder 
+\begin{DoxyParams}{Parameters}
+{\em root} & дерево \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+функция возвращает пустое значение 
+\end{DoxyReturn}
+\hypertarget{techimet4_8cpp_af7f75cd6819f4f5850907e288c04f906}{\index{techimet4.\-cpp@{techimet4.\-cpp}!postorder@{postorder}}
+\index{postorder@{postorder}!techimet4.cpp@{techimet4.\-cpp}}
+\subsubsection[{postorder}]{\setlength{\rightskip}{0pt plus 5cm}void postorder (
+\begin{DoxyParamCaption}
+\item[{struct {\bf tree} $\ast$}]{root}
+\end{DoxyParamCaption}
+)}}\label{techimet4_8cpp_af7f75cd6819f4f5850907e288c04f906}
+
+
+обратный обход 
+
+postorder 
+\begin{DoxyParams}{Parameters}
+{\em root} & дерево \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+функция возвращает пустое значение 
+\end{DoxyReturn}
+\hypertarget{techimet4_8cpp_ac279165114df7d6b00e0fc47650ab9c6}{\index{techimet4.\-cpp@{techimet4.\-cpp}!preorder@{preorder}}
+\index{preorder@{preorder}!techimet4.cpp@{techimet4.\-cpp}}
+\subsubsection[{preorder}]{\setlength{\rightskip}{0pt plus 5cm}void preorder (
+\begin{DoxyParamCaption}
+\item[{struct {\bf tree} $\ast$}]{root}
+\end{DoxyParamCaption}
+)}}\label{techimet4_8cpp_ac279165114df7d6b00e0fc47650ab9c6}
+
+
+прямой обход 
+
+preorder 
+\begin{DoxyParams}{Parameters}
+{\em root} & дерево \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+функция возвращает пустое значение 
+\end{DoxyReturn}
+\hypertarget{techimet4_8cpp_ac01b68f66327b6bb7a25a9fec7c3925f}{\index{techimet4.\-cpp@{techimet4.\-cpp}!stree@{stree}}
+\index{stree@{stree}!techimet4.cpp@{techimet4.\-cpp}}
+\subsubsection[{stree}]{\setlength{\rightskip}{0pt plus 5cm}{\bf tree}$\ast$ stree (
+\begin{DoxyParamCaption}
+\item[{{\bf tree} $\ast$}]{root, }
+\item[{{\bf tree} $\ast$}]{r, }
+\item[{char}]{info}
+\end{DoxyParamCaption}
+)}}\label{techimet4_8cpp_ac01b68f66327b6bb7a25a9fec7c3925f}
+
+
+добавление нового элемента 
+
+stree 
+\begin{DoxyParams}{Parameters}
+{\em root} & корневой элемент \\
+\hline
+{\em r} & новый элемент \\
+\hline
+{\em info} & данные \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+root корневой элемент с указателем на новый 
+\end{DoxyReturn}
+проверка наличия сына. В случае его отсутствия создается новый, в противном случае указатель спускается ниже в соответствии с правилом и повторяет данное действие за счет рекурсии 
