@@ -1,0 +1,129 @@
+\hypertarget{queue_8cpp}{\section{Файл techimet3/queue.cpp}
+\label{queue_8cpp}\index{techimet3/queue.\-cpp@{techimet3/queue.\-cpp}}
+}
+{\ttfamily \#include \char`\"{}stdafx.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$ctype.\-h$>$}\\*
+{\ttfamily \#include $<$locale.\-h$>$}\\*
+\subsection*{Макросы}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{queue_8cpp_a392fb874e547e582e9c66a08a1f23326}{M\-A\-X}~100
+\begin{DoxyCompactList}\small\item\em Пространство имен A. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \hyperlink{queue_8cpp_a8752bd9a5be1550b2015c97037d6cdb8}{qretrieve} (void)
+\item 
+void \hyperlink{queue_8cpp_a6fbbf03d0445e7f8077fe7dea906d673}{enter} (void)
+\item 
+void \hyperlink{queue_8cpp_a3a30ff13a00c3d0ca9fb8436cc3a45b6}{qstore} (char $\ast$q)
+\item 
+void \hyperlink{queue_8cpp_a373facde6fa9f194732349b755be34d3}{review} (void)
+\item 
+void \hyperlink{queue_8cpp_a8e0658944764b32e2f064033d66f1201}{delete\-\_\-ap} (void)
+\item 
+char \hyperlink{queue_8cpp_ad6179df7031edcad2f714aa1e3bc3e44}{retrieve} (void)
+\item 
+int \hyperlink{queue_8cpp_a353674c5af92be7fb389265cde4e5e03}{\-\_\-tmain} (int argc, \-\_\-\-T\-C\-H\-A\-R $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\subsection*{Переменные}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \hyperlink{queue_8cpp_ab39066f5c1086659cd6210c7bdc3063f}{p} \mbox{[}\hyperlink{queue_8cpp_a392fb874e547e582e9c66a08a1f23326}{M\-A\-X}\mbox{]}
+\item 
+int \hyperlink{queue_8cpp_a24f340511b1280c042f185eab3c90984}{spos} = 0
+\item 
+int \hyperlink{queue_8cpp_aeb0b0d2597e73f4e7f45b756c2ffd1bb}{rpos} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Макросы}
+\hypertarget{queue_8cpp_a392fb874e547e582e9c66a08a1f23326}{\index{queue.\-cpp@{queue.\-cpp}!M\-A\-X@{M\-A\-X}}
+\index{M\-A\-X@{M\-A\-X}!queue.cpp@{queue.\-cpp}}
+\subsubsection[{M\-A\-X}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-A\-X~100}}\label{queue_8cpp_a392fb874e547e582e9c66a08a1f23326}
+
+
+Пространство имен A. 
+
+namespace std; 
+
+\subsection{Функции}
+\hypertarget{queue_8cpp_a353674c5af92be7fb389265cde4e5e03}{\index{queue.\-cpp@{queue.\-cpp}!\-\_\-tmain@{\-\_\-tmain}}
+\index{\-\_\-tmain@{\-\_\-tmain}!queue.cpp@{queue.\-cpp}}
+\subsubsection[{\-\_\-tmain}]{\setlength{\rightskip}{0pt plus 5cm}int \-\_\-tmain (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{\-\_\-\-T\-C\-H\-A\-R $\ast$}]{argv\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{queue_8cpp_a353674c5af92be7fb389265cde4e5e03}
+инициализация массива очереди
+
+инициализация счетчика
+
+вывод меню функций на экран
+
+выбор функции пользователем \hypertarget{queue_8cpp_a8e0658944764b32e2f064033d66f1201}{\index{queue.\-cpp@{queue.\-cpp}!delete\-\_\-ap@{delete\-\_\-ap}}
+\index{delete\-\_\-ap@{delete\-\_\-ap}!queue.cpp@{queue.\-cpp}}
+\subsubsection[{delete\-\_\-ap}]{\setlength{\rightskip}{0pt plus 5cm}void delete\-\_\-ap (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{queue_8cpp_a8e0658944764b32e2f064033d66f1201}
+инициализация дополнительного массива
+
+удаление элемента \hypertarget{queue_8cpp_a6fbbf03d0445e7f8077fe7dea906d673}{\index{queue.\-cpp@{queue.\-cpp}!enter@{enter}}
+\index{enter@{enter}!queue.cpp@{queue.\-cpp}}
+\subsubsection[{enter}]{\setlength{\rightskip}{0pt plus 5cm}void enter (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{queue_8cpp_a6fbbf03d0445e7f8077fe7dea906d673}
+выделение памяти, если возможно
+
+вставка элемента \hypertarget{queue_8cpp_a8752bd9a5be1550b2015c97037d6cdb8}{\index{queue.\-cpp@{queue.\-cpp}!qretrieve@{qretrieve}}
+\index{qretrieve@{qretrieve}!queue.cpp@{queue.\-cpp}}
+\subsubsection[{qretrieve}]{\setlength{\rightskip}{0pt plus 5cm}char $\ast$ qretrieve (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{queue_8cpp_a8752bd9a5be1550b2015c97037d6cdb8}
+увеличение счетчика
+
+извлечение элемента \hypertarget{queue_8cpp_a3a30ff13a00c3d0ca9fb8436cc3a45b6}{\index{queue.\-cpp@{queue.\-cpp}!qstore@{qstore}}
+\index{qstore@{qstore}!queue.cpp@{queue.\-cpp}}
+\subsubsection[{qstore}]{\setlength{\rightskip}{0pt plus 5cm}void qstore (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{q}
+\end{DoxyParamCaption}
+)}}\label{queue_8cpp_a3a30ff13a00c3d0ca9fb8436cc3a45b6}
+добавление элемента
+
+увеличение счетчика \hypertarget{queue_8cpp_ad6179df7031edcad2f714aa1e3bc3e44}{\index{queue.\-cpp@{queue.\-cpp}!retrieve@{retrieve}}
+\index{retrieve@{retrieve}!queue.cpp@{queue.\-cpp}}
+\subsubsection[{retrieve}]{\setlength{\rightskip}{0pt plus 5cm}char retrieve (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{queue_8cpp_ad6179df7031edcad2f714aa1e3bc3e44}
+\hypertarget{queue_8cpp_a373facde6fa9f194732349b755be34d3}{\index{queue.\-cpp@{queue.\-cpp}!review@{review}}
+\index{review@{review}!queue.cpp@{queue.\-cpp}}
+\subsubsection[{review}]{\setlength{\rightskip}{0pt plus 5cm}void review (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{queue_8cpp_a373facde6fa9f194732349b755be34d3}
+инициализация счетчика 
+
+\subsection{Переменные}
+\hypertarget{queue_8cpp_ab39066f5c1086659cd6210c7bdc3063f}{\index{queue.\-cpp@{queue.\-cpp}!p@{p}}
+\index{p@{p}!queue.cpp@{queue.\-cpp}}
+\subsubsection[{p}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ p\mbox{[}{\bf M\-A\-X}\mbox{]}}}\label{queue_8cpp_ab39066f5c1086659cd6210c7bdc3063f}
+\hypertarget{queue_8cpp_aeb0b0d2597e73f4e7f45b756c2ffd1bb}{\index{queue.\-cpp@{queue.\-cpp}!rpos@{rpos}}
+\index{rpos@{rpos}!queue.cpp@{queue.\-cpp}}
+\subsubsection[{rpos}]{\setlength{\rightskip}{0pt plus 5cm}int rpos = 0}}\label{queue_8cpp_aeb0b0d2597e73f4e7f45b756c2ffd1bb}
+\hypertarget{queue_8cpp_a24f340511b1280c042f185eab3c90984}{\index{queue.\-cpp@{queue.\-cpp}!spos@{spos}}
+\index{spos@{spos}!queue.cpp@{queue.\-cpp}}
+\subsubsection[{spos}]{\setlength{\rightskip}{0pt plus 5cm}int spos = 0}}\label{queue_8cpp_a24f340511b1280c042f185eab3c90984}

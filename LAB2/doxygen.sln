@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "doxygen", "doxygen\doxygen.vcxproj", "{E6F9C32E-1F59-4D19-8DA0-F0BF2C85E5C8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "insertion", "insertion\insertion.vcxproj", "{FAAEE1D6-3ED3-4E61-A88B-8D5229E31F8A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E6F9C32E-1F59-4D19-8DA0-F0BF2C85E5C8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E6F9C32E-1F59-4D19-8DA0-F0BF2C85E5C8}.Debug|Win32.Build.0 = Debug|Win32
+		{E6F9C32E-1F59-4D19-8DA0-F0BF2C85E5C8}.Release|Win32.ActiveCfg = Release|Win32
+		{E6F9C32E-1F59-4D19-8DA0-F0BF2C85E5C8}.Release|Win32.Build.0 = Release|Win32
+		{FAAEE1D6-3ED3-4E61-A88B-8D5229E31F8A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FAAEE1D6-3ED3-4E61-A88B-8D5229E31F8A}.Debug|Win32.Build.0 = Debug|Win32
+		{FAAEE1D6-3ED3-4E61-A88B-8D5229E31F8A}.Release|Win32.ActiveCfg = Release|Win32
+		{FAAEE1D6-3ED3-4E61-A88B-8D5229E31F8A}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

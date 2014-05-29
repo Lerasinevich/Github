@@ -1,0 +1,110 @@
+\hypertarget{insertion_8cpp}{\section{insertion/insertion.cpp File Reference}
+\label{insertion_8cpp}\index{insertion/insertion.\-cpp@{insertion/insertion.\-cpp}}
+}
+{\ttfamily \#include \char`\"{}stdafx.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}stdio.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}iostream\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{insertion_8cpp_a5ee76da9bb774d83ac9b55f0418bbf26}{Merge} (int $\ast$A, int first, int last)
+\item 
+void \hyperlink{insertion_8cpp_a1df179c8f4428bbc8fd6ecac4f7eeedd}{Merge\-Sort} (int $\ast$A, int first, int last)
+\item 
+int \hyperlink{insertion_8cpp_a353674c5af92be7fb389265cde4e5e03}{\-\_\-tmain} (int argc, \-\_\-\-T\-C\-H\-A\-R $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{insertion_8cpp_a353674c5af92be7fb389265cde4e5e03}{\index{insertion.\-cpp@{insertion.\-cpp}!\-\_\-tmain@{\-\_\-tmain}}
+\index{\-\_\-tmain@{\-\_\-tmain}!insertion.cpp@{insertion.\-cpp}}
+\subsubsection[{\-\_\-tmain}]{\setlength{\rightskip}{0pt plus 5cm}int \-\_\-tmain (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{\-\_\-\-T\-C\-H\-A\-R $\ast$}]{argv\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{insertion_8cpp_a353674c5af92be7fb389265cde4e5e03}
+\-\_\-tmain Главная функция 
+\begin{DoxyParams}{Parameters}
+{\em srgc} & \\
+\hline
+{\em argv\mbox{[}$\,$\mbox{]}} & \\
+\hline
+\end{DoxyParams}
+вызов сортирующей процедуры
+
+вывод упорядоченного массива \hypertarget{insertion_8cpp_a5ee76da9bb774d83ac9b55f0418bbf26}{\index{insertion.\-cpp@{insertion.\-cpp}!Merge@{Merge}}
+\index{Merge@{Merge}!insertion.cpp@{insertion.\-cpp}}
+\subsubsection[{Merge}]{\setlength{\rightskip}{0pt plus 5cm}void Merge (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{A, }
+\item[{int}]{first, }
+\item[{int}]{last}
+\end{DoxyParamCaption}
+)}}\label{insertion_8cpp_a5ee76da9bb774d83ac9b55f0418bbf26}
+Merge Эта функция сливает два массива в один в порядке неубывания (метод слияния) 
+\begin{DoxyParams}{Parameters}
+{\em A} & -\/ указатель на изначальный массив \\
+\hline
+{\em first} & -\/ начало левой части \\
+\hline
+{\em last} & -\/ начало левой части \\
+\hline
+\end{DoxyParams}
+инициализация переменной для среднего элемента
+
+инициализия переменной для левой части массива
+
+инициализация переменной для правой части массива
+
+инициализация счетчика
+
+создание временного массива
+
+вычисление среднего элемента
+
+начало левой части
+
+начало правой части
+
+цикл для прохождения по массиву
+
+условие записи элемента во временный массив из левой части
+
+запись элемента во временный массив из левой части
+
+переход к следующему элементу левой части
+
+условие записи элемента во временный массив из правой части
+
+запись элемента во временный массив из правой части
+
+переход к следующему элементу правой части
+
+возвращение результата в список
+
+освобождение памяти \hypertarget{insertion_8cpp_a1df179c8f4428bbc8fd6ecac4f7eeedd}{\index{insertion.\-cpp@{insertion.\-cpp}!Merge\-Sort@{Merge\-Sort}}
+\index{Merge\-Sort@{Merge\-Sort}!insertion.cpp@{insertion.\-cpp}}
+\subsubsection[{Merge\-Sort}]{\setlength{\rightskip}{0pt plus 5cm}void Merge\-Sort (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{A, }
+\item[{int}]{first, }
+\item[{int}]{last}
+\end{DoxyParamCaption}
+)}}\label{insertion_8cpp_a1df179c8f4428bbc8fd6ecac4f7eeedd}
+Merge Эта функция рекурсивная, последовательно разделяет массив на две части и сортирует их этим же алгоритмо 
+\begin{DoxyParams}{Parameters}
+{\em A} & -\/ указатель на изначальный массив \\
+\hline
+{\em first} & -\/ начало левой части \\
+\hline
+{\em last} & -\/ начало левой части \\
+\hline
+\end{DoxyParams}
+проверка, но разделен ли уже массив на единичные элементы
+
+сортировка левой части
+
+сортировка правой части
+
+слияние двух частей 

@@ -1,0 +1,393 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>techimet3: Файл list/list.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">techimet3
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Макросы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_48c61abad44e2f181b0a6a33afb59c17.html">list</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#func-members">Функции</a> &#124;
+<a href="#var-members">Переменные</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл list.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="list_2stdafx_8h_source.html">stdafx.h</a>&quot;</code><br/>
+<code>#include &lt;string.h&gt;</code><br/>
+<code>#include &lt;stdlib.h&gt;</code><br/>
+<code>#include &lt;stdio.h&gt;</code><br/>
+<code>#include &lt;ctype.h&gt;</code><br/>
+<code>#include &lt;locale.h&gt;</code><br/>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaddress.html">address</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Пространство имен A.  <a href="structaddress.html#details">Подробнее...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a78c628aca6658622228ca6ad89d59783"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structaddress.html">address</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="list_8cpp.html#a78c628aca6658622228ca6ad89d59783">sls_store</a> (struct <a class="el" href="structaddress.html">address</a> *i, struct <a class="el" href="structaddress.html">address</a> **start, struct <a class="el" href="structaddress.html">address</a> **last)</td></tr>
+<tr class="memdesc:a78c628aca6658622228ca6ad89d59783"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вставка в упорядоченный односвязный список  <a href="#a78c628aca6658622228ca6ad89d59783">Подробнее...</a><br/></td></tr>
+<tr class="separator:a78c628aca6658622228ca6ad89d59783"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa40ba7a82e24b4eaa349288b6a2f2f48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="list_8cpp.html#aa40ba7a82e24b4eaa349288b6a2f2f48">display</a> (struct <a class="el" href="structaddress.html">address</a> *start)</td></tr>
+<tr class="memdesc:aa40ba7a82e24b4eaa349288b6a2f2f48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отображение элемента  <a href="#aa40ba7a82e24b4eaa349288b6a2f2f48">Подробнее...</a><br/></td></tr>
+<tr class="separator:aa40ba7a82e24b4eaa349288b6a2f2f48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a894ee51ba516418649b6d1392d09d94c"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structaddress.html">address</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="list_8cpp.html#a894ee51ba516418649b6d1392d09d94c">search</a> (struct <a class="el" href="structaddress.html">address</a> *start, char *n)</td></tr>
+<tr class="separator:a894ee51ba516418649b6d1392d09d94c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a994c686ad17340acaf3b11322948a57a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="list_8cpp.html#a994c686ad17340acaf3b11322948a57a">sldelete</a> (struct <a class="el" href="structaddress.html">address</a> *<a class="el" href="queue_8cpp.html#ab39066f5c1086659cd6210c7bdc3063f">p</a>, struct <a class="el" href="structaddress.html">address</a> *i, struct <a class="el" href="structaddress.html">address</a> **start, struct <a class="el" href="structaddress.html">address</a> **last)</td></tr>
+<tr class="memdesc:a994c686ad17340acaf3b11322948a57a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отображение элемента  <a href="#a994c686ad17340acaf3b11322948a57a">Подробнее...</a><br/></td></tr>
+<tr class="separator:a994c686ad17340acaf3b11322948a57a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a353674c5af92be7fb389265cde4e5e03"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="list_8cpp.html#a353674c5af92be7fb389265cde4e5e03">_tmain</a> (int argc, _TCHAR *argv[])</td></tr>
+<tr class="separator:a353674c5af92be7fb389265cde4e5e03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Переменные</h2></td></tr>
+<tr class="memitem:af8489b951d11304c90e75519a6d08d1a"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="list_8cpp.html#af8489b951d11304c90e75519a6d08d1a">name</a> [40]</td></tr>
+<tr class="separator:af8489b951d11304c90e75519a6d08d1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2f315532384ebd0e626f1a2dcdb9792"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="list_8cpp.html#ae2f315532384ebd0e626f1a2dcdb9792">street</a> [40]</td></tr>
+<tr class="separator:ae2f315532384ebd0e626f1a2dcdb9792"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35c49f482fe5ff1242a8be75bbe76b09"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="list_8cpp.html#a35c49f482fe5ff1242a8be75bbe76b09">city</a> [20]</td></tr>
+<tr class="separator:a35c49f482fe5ff1242a8be75bbe76b09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae95c0dd49785a54106946f62f1a56792"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="list_8cpp.html#ae95c0dd49785a54106946f62f1a56792">state</a> [3]</td></tr>
+<tr class="separator:ae95c0dd49785a54106946f62f1a56792"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a029adf816b3a216e108c2fcf73476fa4"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="list_8cpp.html#a029adf816b3a216e108c2fcf73476fa4">zip</a> [11]</td></tr>
+<tr class="separator:a029adf816b3a216e108c2fcf73476fa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a2c8929dd993e279c4cb2b604c4ef93"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structaddress.html">address</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="list_8cpp.html#a1a2c8929dd993e279c4cb2b604c4ef93">next</a></td></tr>
+<tr class="separator:a1a2c8929dd993e279c4cb2b604c4ef93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Функции</h2>
+<a class="anchor" id="a353674c5af92be7fb389265cde4e5e03"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _tmain </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>argc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">_TCHAR *&#160;</td>
+          <td class="paramname"><em>argv</em>[]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa40ba7a82e24b4eaa349288b6a2f2f48"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void display </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structaddress.html">address</a> *&#160;</td>
+          <td class="paramname"><em>start</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Отображение элемента </p>
+<p>function display </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">start</td><td>- начало списка </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Функция возвращает пустое значение </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a894ee51ba516418649b6d1392d09d94c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structaddress.html">address</a>* search </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structaddress.html">address</a> *&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a994c686ad17340acaf3b11322948a57a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sldelete </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structaddress.html">address</a> *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structaddress.html">address</a> *&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structaddress.html">address</a> **&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structaddress.html">address</a> **&#160;</td>
+          <td class="paramname"><em>last</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Отображение элемента </p>
+<p>function sdelete </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>- удаляемый элемент </td></tr>
+    <tr><td class="paramname">start</td><td>- начало списка </td></tr>
+    <tr><td class="paramname">last</td><td>- конец списка </td></tr>
+    <tr><td class="paramname">p</td><td>- предыдущий элемент </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Функция возвращает пустое значение </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a78c628aca6658622228ca6ad89d59783"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structaddress.html">address</a> sls_store </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structaddress.html">address</a> *&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structaddress.html">address</a> **&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structaddress.html">address</a> **&#160;</td>
+          <td class="paramname"><em>last</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вставка в упорядоченный односвязный список </p>
+<p>function sls_store </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>- новый элемент </td></tr>
+    <tr><td class="paramname">start</td><td>- начало списка </td></tr>
+    <tr><td class="paramname">last</td><td>- конец списка </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Функция возвращает пустое значение </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Переменные</h2>
+<a class="anchor" id="a35c49f482fe5ff1242a8be75bbe76b09"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char city[20]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af8489b951d11304c90e75519a6d08d1a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char name[40]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1a2c8929dd993e279c4cb2b604c4ef93"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structaddress.html">address</a>* next</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae95c0dd49785a54106946f62f1a56792"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char state[3]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae2f315532384ebd0e626f1a2dcdb9792"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char street[40]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a029adf816b3a216e108c2fcf73476fa4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char zip[11]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по techimet3. Последние изменения: Вт 8 Апр 2014 21:24:35. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>
