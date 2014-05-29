@@ -1,23 +1,23 @@
-\hypertarget{dijkstra4_8cpp}{\section{dijkstra4/dijkstra4.cpp File Reference}
+\hypertarget{dijkstra4_8cpp}{\section{Файл dijkstra4/dijkstra4.cpp}
 \label{dijkstra4_8cpp}\index{dijkstra4/dijkstra4.\-cpp@{dijkstra4/dijkstra4.\-cpp}}
 }
 {\ttfamily \#include \char`\"{}stdafx.\-h\char`\"{}}\\*
 {\ttfamily \#include $<$iostream$>$}\\*
-\subsection*{Functions}
+\subsection*{Функции}
 \begin{DoxyCompactItemize}
 \item 
 void \hyperlink{dijkstra4_8cpp_a4961fa1ceb38b8f48fd07a9c0d780957}{Dijkstra} (int G\-R\mbox{[}\hyperlink{dijkstra4_8cpp_ac5dc2e25ee3e4af146d8ccdb65cf43da}{V}\mbox{]}\mbox{[}\hyperlink{dijkstra4_8cpp_ac5dc2e25ee3e4af146d8ccdb65cf43da}{V}\mbox{]}, int st)
-\item 
+\begin{DoxyCompactList}\small\item\em находит кратчайший путь до всех вершин от заданной вершины \end{DoxyCompactList}\item 
 void \hyperlink{dijkstra4_8cpp_acdef7a1fd863a6d3770c1268cb06add3}{main} ()
-\end{DoxyCompactItemize}
-\subsection*{Variables}
+\begin{DoxyCompactList}\small\item\em главная функция \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Переменные}
 \begin{DoxyCompactItemize}
 \item 
 const int \hyperlink{dijkstra4_8cpp_ac5dc2e25ee3e4af146d8ccdb65cf43da}{V} =6
 \end{DoxyCompactItemize}
 
 
-\subsection{Function Documentation}
+\subsection{Функции}
 \hypertarget{dijkstra4_8cpp_a4961fa1ceb38b8f48fd07a9c0d780957}{\index{dijkstra4.\-cpp@{dijkstra4.\-cpp}!Dijkstra@{Dijkstra}}
 \index{Dijkstra@{Dijkstra}!dijkstra4.cpp@{dijkstra4.\-cpp}}
 \subsubsection[{Dijkstra}]{\setlength{\rightskip}{0pt plus 5cm}void Dijkstra (
@@ -26,7 +26,27 @@ const int \hyperlink{dijkstra4_8cpp_ac5dc2e25ee3e4af146d8ccdb65cf43da}{V} =6
 \item[{int}]{st}
 \end{DoxyParamCaption}
 )}}\label{dijkstra4_8cpp_a4961fa1ceb38b8f48fd07a9c0d780957}
-\hypertarget{dijkstra4_8cpp_acdef7a1fd863a6d3770c1268cb06add3}{\index{dijkstra4.\-cpp@{dijkstra4.\-cpp}!main@{main}}
+
+
+находит кратчайший путь до всех вершин от заданной вершины 
+
+Dijkstra 
+\begin{DoxyParams}{Аргументы}
+{\em G\-R\mbox{[}\-V\mbox{]}\mbox{[}\-V\mbox{]}} & принимает на вход таблицу смежности -\/ двухмерный массив \\
+\hline
+{\em st} & принимает на вход вершину, с которой начинается обход \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+функция ничего не возвращает 
+\end{DoxyReturn}
+вводим переменные массив расстояний, счетчик, счетчик №2, индекс вершины, на которой находимся в данный момент;
+
+массив посещенных вершин
+
+проходим по всем вершинам, присваеваем каждой вершине значение непосщенной
+
+цикл прохождения по алгоритму \hypertarget{dijkstra4_8cpp_acdef7a1fd863a6d3770c1268cb06add3}{\index{dijkstra4.\-cpp@{dijkstra4.\-cpp}!main@{main}}
 \index{main@{main}!dijkstra4.cpp@{dijkstra4.\-cpp}}
 \subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}void main (
 \begin{DoxyParamCaption}
@@ -35,7 +55,15 @@ const int \hyperlink{dijkstra4_8cpp_ac5dc2e25ee3e4af146d8ccdb65cf43da}{V} =6
 )}}\label{dijkstra4_8cpp_acdef7a1fd863a6d3770c1268cb06add3}
 
 
-\subsection{Variable Documentation}
+главная функция 
+
+main диалог с пользователем. ПОльзователь может
+
+ввести свои значения вершин графа.
+
+выбор вершины, для которой должен проводится расчет. 
+
+\subsection{Переменные}
 \hypertarget{dijkstra4_8cpp_ac5dc2e25ee3e4af146d8ccdb65cf43da}{\index{dijkstra4.\-cpp@{dijkstra4.\-cpp}!V@{V}}
 \index{V@{V}!dijkstra4.cpp@{dijkstra4.\-cpp}}
 \subsubsection[{V}]{\setlength{\rightskip}{0pt plus 5cm}const int V =6}}\label{dijkstra4_8cpp_ac5dc2e25ee3e4af146d8ccdb65cf43da}

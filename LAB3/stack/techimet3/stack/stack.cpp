@@ -9,9 +9,12 @@
 
 #define MAX 100
 
-int *p;   /* указатель на область свободной памяти */
-int *tos; /* указатель на вершину стека */
-int *bos; /* указатель на дно стека */
+/**@brief указатель на область свободной памяти */
+int *p;   
+/**@ указатель на вершину стека */
+int *tos; 
+/**@ указатель на дно стека */
+int *bos; 
 
 void push(int i);
 int pop(void);
@@ -26,27 +29,27 @@ int _tmain(int argc, _TCHAR* argv[])
 	
   char s[80];
 
-  p = (int *) malloc(MAX*sizeof(int)); /* получить память для стека */
+  p = (int *) malloc(MAX*sizeof(int)); /// получить память для стека */
   if(!p) {
     printf("Ошибка при выделении памяти\n");
     exit(1);
   }
-  tos = p;
+  tos = p;///получить указатель на вершину стека
   bos = p + MAX-1;
 
 
   do {
-    printf("1 - push, 2- pop");
-    gets(s);
+    printf("1 - push, 2- pop");/// предоставление выбора пользователю
+    gets(s);///считывание выбора пользователя
     switch(*s) {
-       case '1':
+       case '1':///случай "1":
 		int a;
 		printf(": ");
 		scanf("%d", a);
-		push(a);
+		push(a);///добавить элемент
 		break;
-      case '2':{
-        int b = pop();
+      case '2':{/// случай "2":
+        int b = pop();///удалить элемент
         printf("%d", b);
         break;
 	  default:
@@ -57,7 +60,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	     
     }
   }
-  while(*s != 'q');
+  while(*s != 'q');///
 	
   return 0;
 }

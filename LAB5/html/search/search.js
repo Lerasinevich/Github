@@ -7,18 +7,22 @@
 
 var indexSectionsWithContent =
 {
-  0: "dmstv",
-  1: "dst",
-  2: "dm",
-  3: "v"
+  0: "_abcdefgijklmnpqrstuvwxz",
+  1: "a",
+  2: "acdfjlqstv",
+  3: "_abcdegipqrstux",
+  4: "abceijklnprstvwz",
+  5: "m"
 };
 
 var indexSectionNames =
 {
   0: "all",
-  1: "files",
-  2: "functions",
-  3: "variables"
+  1: "classes",
+  2: "files",
+  3: "functions",
+  4: "variables",
+  5: "defines"
 };
 
 function convertToId(search)

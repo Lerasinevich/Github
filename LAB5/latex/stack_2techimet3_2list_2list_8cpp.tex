@@ -1,0 +1,160 @@
+\hypertarget{stack_2techimet3_2list_2list_8cpp}{\section{Файл stack/techimet3/list/list.cpp}
+\label{stack_2techimet3_2list_2list_8cpp}\index{stack/techimet3/list/list.\-cpp@{stack/techimet3/list/list.\-cpp}}
+}
+{\ttfamily \#include \char`\"{}stdafx.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$ctype.\-h$>$}\\*
+{\ttfamily \#include $<$locale.\-h$>$}\\*
+\subsection*{Классы}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structaddress}{address}
+\begin{DoxyCompactList}\small\item\em Пространство имен A. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structaddress}{address} \hyperlink{stack_2techimet3_2list_2list_8cpp_a78c628aca6658622228ca6ad89d59783}{sls\-\_\-store} (struct \hyperlink{structaddress}{address} $\ast$i, struct \hyperlink{structaddress}{address} $\ast$$\ast$start, struct \hyperlink{structaddress}{address} $\ast$$\ast$last)
+\begin{DoxyCompactList}\small\item\em Вставка в упорядоченный односвязный список \end{DoxyCompactList}\item 
+void \hyperlink{stack_2techimet3_2list_2list_8cpp_aa40ba7a82e24b4eaa349288b6a2f2f48}{display} (struct \hyperlink{structaddress}{address} $\ast$start)
+\begin{DoxyCompactList}\small\item\em Отображение элемента \end{DoxyCompactList}\item 
+struct \hyperlink{structaddress}{address} $\ast$ \hyperlink{stack_2techimet3_2list_2list_8cpp_a894ee51ba516418649b6d1392d09d94c}{search} (struct \hyperlink{structaddress}{address} $\ast$start, char $\ast$n)
+\item 
+void \hyperlink{stack_2techimet3_2list_2list_8cpp_a994c686ad17340acaf3b11322948a57a}{sldelete} (struct \hyperlink{structaddress}{address} $\ast$\hyperlink{stack_2techimet3_2html_2jquery_8js_a2335e57f79b6acfb6de59c235dc8a83e}{p}, struct \hyperlink{structaddress}{address} $\ast$i, struct \hyperlink{structaddress}{address} $\ast$$\ast$start, struct \hyperlink{structaddress}{address} $\ast$$\ast$last)
+\begin{DoxyCompactList}\small\item\em Отображение элемента \end{DoxyCompactList}\item 
+int \hyperlink{stack_2techimet3_2list_2list_8cpp_a353674c5af92be7fb389265cde4e5e03}{\-\_\-tmain} (int argc, \-\_\-\-T\-C\-H\-A\-R $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\subsection*{Переменные}
+\begin{DoxyCompactItemize}
+\item 
+char \hyperlink{stack_2techimet3_2list_2list_8cpp_af8489b951d11304c90e75519a6d08d1a}{name} \mbox{[}40\mbox{]}
+\item 
+char \hyperlink{stack_2techimet3_2list_2list_8cpp_ae2f315532384ebd0e626f1a2dcdb9792}{street} \mbox{[}40\mbox{]}
+\item 
+char \hyperlink{stack_2techimet3_2list_2list_8cpp_a35c49f482fe5ff1242a8be75bbe76b09}{city} \mbox{[}20\mbox{]}
+\item 
+char \hyperlink{stack_2techimet3_2list_2list_8cpp_ae95c0dd49785a54106946f62f1a56792}{state} \mbox{[}3\mbox{]}
+\item 
+char \hyperlink{stack_2techimet3_2list_2list_8cpp_a029adf816b3a216e108c2fcf73476fa4}{zip} \mbox{[}11\mbox{]}
+\item 
+struct \hyperlink{structaddress}{address} $\ast$ \hyperlink{stack_2techimet3_2list_2list_8cpp_a1a2c8929dd993e279c4cb2b604c4ef93}{next}
+\end{DoxyCompactItemize}
+
+
+\subsection{Функции}
+\hypertarget{stack_2techimet3_2list_2list_8cpp_a353674c5af92be7fb389265cde4e5e03}{\index{stack/techimet3/list/list.\-cpp@{stack/techimet3/list/list.\-cpp}!\-\_\-tmain@{\-\_\-tmain}}
+\index{\-\_\-tmain@{\-\_\-tmain}!stack/techimet3/list/list.cpp@{stack/techimet3/list/list.\-cpp}}
+\subsubsection[{\-\_\-tmain}]{\setlength{\rightskip}{0pt plus 5cm}int \-\_\-tmain (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{\-\_\-\-T\-C\-H\-A\-R $\ast$}]{argv\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{stack_2techimet3_2list_2list_8cpp_a353674c5af92be7fb389265cde4e5e03}
+\hypertarget{stack_2techimet3_2list_2list_8cpp_aa40ba7a82e24b4eaa349288b6a2f2f48}{\index{stack/techimet3/list/list.\-cpp@{stack/techimet3/list/list.\-cpp}!display@{display}}
+\index{display@{display}!stack/techimet3/list/list.cpp@{stack/techimet3/list/list.\-cpp}}
+\subsubsection[{display}]{\setlength{\rightskip}{0pt plus 5cm}void display (
+\begin{DoxyParamCaption}
+\item[{struct {\bf address} $\ast$}]{start}
+\end{DoxyParamCaption}
+)}}\label{stack_2techimet3_2list_2list_8cpp_aa40ba7a82e24b4eaa349288b6a2f2f48}
+
+
+Отображение элемента 
+
+function display 
+\begin{DoxyParams}{Аргументы}
+{\em start} & -\/ начало списка \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Функция возвращает пустое значение 
+\end{DoxyReturn}
+\hypertarget{stack_2techimet3_2list_2list_8cpp_a894ee51ba516418649b6d1392d09d94c}{\index{stack/techimet3/list/list.\-cpp@{stack/techimet3/list/list.\-cpp}!search@{search}}
+\index{search@{search}!stack/techimet3/list/list.cpp@{stack/techimet3/list/list.\-cpp}}
+\subsubsection[{search}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf address}$\ast$ search (
+\begin{DoxyParamCaption}
+\item[{struct {\bf address} $\ast$}]{start, }
+\item[{char $\ast$}]{n}
+\end{DoxyParamCaption}
+)}}\label{stack_2techimet3_2list_2list_8cpp_a894ee51ba516418649b6d1392d09d94c}
+\hypertarget{stack_2techimet3_2list_2list_8cpp_a994c686ad17340acaf3b11322948a57a}{\index{stack/techimet3/list/list.\-cpp@{stack/techimet3/list/list.\-cpp}!sldelete@{sldelete}}
+\index{sldelete@{sldelete}!stack/techimet3/list/list.cpp@{stack/techimet3/list/list.\-cpp}}
+\subsubsection[{sldelete}]{\setlength{\rightskip}{0pt plus 5cm}void sldelete (
+\begin{DoxyParamCaption}
+\item[{struct {\bf address} $\ast$}]{p, }
+\item[{struct {\bf address} $\ast$}]{i, }
+\item[{struct {\bf address} $\ast$$\ast$}]{start, }
+\item[{struct {\bf address} $\ast$$\ast$}]{last}
+\end{DoxyParamCaption}
+)}}\label{stack_2techimet3_2list_2list_8cpp_a994c686ad17340acaf3b11322948a57a}
+
+
+Отображение элемента 
+
+function sdelete 
+\begin{DoxyParams}{Аргументы}
+{\em i} & -\/ удаляемый элемент \\
+\hline
+{\em start} & -\/ начало списка \\
+\hline
+{\em last} & -\/ конец списка \\
+\hline
+{\em p} & -\/ предыдущий элемент \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Функция возвращает пустое значение 
+\end{DoxyReturn}
+\hypertarget{stack_2techimet3_2list_2list_8cpp_a78c628aca6658622228ca6ad89d59783}{\index{stack/techimet3/list/list.\-cpp@{stack/techimet3/list/list.\-cpp}!sls\-\_\-store@{sls\-\_\-store}}
+\index{sls\-\_\-store@{sls\-\_\-store}!stack/techimet3/list/list.cpp@{stack/techimet3/list/list.\-cpp}}
+\subsubsection[{sls\-\_\-store}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf address} sls\-\_\-store (
+\begin{DoxyParamCaption}
+\item[{struct {\bf address} $\ast$}]{i, }
+\item[{struct {\bf address} $\ast$$\ast$}]{start, }
+\item[{struct {\bf address} $\ast$$\ast$}]{last}
+\end{DoxyParamCaption}
+)}}\label{stack_2techimet3_2list_2list_8cpp_a78c628aca6658622228ca6ad89d59783}
+
+
+Вставка в упорядоченный односвязный список 
+
+function sls\-\_\-store 
+\begin{DoxyParams}{Аргументы}
+{\em i} & -\/ новый элемент \\
+\hline
+{\em start} & -\/ начало списка \\
+\hline
+{\em last} & -\/ конец списка \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Функция возвращает пустое значение 
+\end{DoxyReturn}
+первый элемент в списке $\ast$/
+
+вставка в середину $\ast$/
+
+вставка в начало $\ast$/
+
+вставка в конец $\ast$/ 
+
+\subsection{Переменные}
+\hypertarget{stack_2techimet3_2list_2list_8cpp_a35c49f482fe5ff1242a8be75bbe76b09}{\index{stack/techimet3/list/list.\-cpp@{stack/techimet3/list/list.\-cpp}!city@{city}}
+\index{city@{city}!stack/techimet3/list/list.cpp@{stack/techimet3/list/list.\-cpp}}
+\subsubsection[{city}]{\setlength{\rightskip}{0pt plus 5cm}char city\mbox{[}20\mbox{]}}}\label{stack_2techimet3_2list_2list_8cpp_a35c49f482fe5ff1242a8be75bbe76b09}
+\hypertarget{stack_2techimet3_2list_2list_8cpp_af8489b951d11304c90e75519a6d08d1a}{\index{stack/techimet3/list/list.\-cpp@{stack/techimet3/list/list.\-cpp}!name@{name}}
+\index{name@{name}!stack/techimet3/list/list.cpp@{stack/techimet3/list/list.\-cpp}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}char name\mbox{[}40\mbox{]}}}\label{stack_2techimet3_2list_2list_8cpp_af8489b951d11304c90e75519a6d08d1a}
+\hypertarget{stack_2techimet3_2list_2list_8cpp_a1a2c8929dd993e279c4cb2b604c4ef93}{\index{stack/techimet3/list/list.\-cpp@{stack/techimet3/list/list.\-cpp}!next@{next}}
+\index{next@{next}!stack/techimet3/list/list.cpp@{stack/techimet3/list/list.\-cpp}}
+\subsubsection[{next}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf address}$\ast$ next}}\label{stack_2techimet3_2list_2list_8cpp_a1a2c8929dd993e279c4cb2b604c4ef93}
+\hypertarget{stack_2techimet3_2list_2list_8cpp_ae95c0dd49785a54106946f62f1a56792}{\index{stack/techimet3/list/list.\-cpp@{stack/techimet3/list/list.\-cpp}!state@{state}}
+\index{state@{state}!stack/techimet3/list/list.cpp@{stack/techimet3/list/list.\-cpp}}
+\subsubsection[{state}]{\setlength{\rightskip}{0pt plus 5cm}char state\mbox{[}3\mbox{]}}}\label{stack_2techimet3_2list_2list_8cpp_ae95c0dd49785a54106946f62f1a56792}
+\hypertarget{stack_2techimet3_2list_2list_8cpp_ae2f315532384ebd0e626f1a2dcdb9792}{\index{stack/techimet3/list/list.\-cpp@{stack/techimet3/list/list.\-cpp}!street@{street}}
+\index{street@{street}!stack/techimet3/list/list.cpp@{stack/techimet3/list/list.\-cpp}}
+\subsubsection[{street}]{\setlength{\rightskip}{0pt plus 5cm}char street\mbox{[}40\mbox{]}}}\label{stack_2techimet3_2list_2list_8cpp_ae2f315532384ebd0e626f1a2dcdb9792}
+\hypertarget{stack_2techimet3_2list_2list_8cpp_a029adf816b3a216e108c2fcf73476fa4}{\index{stack/techimet3/list/list.\-cpp@{stack/techimet3/list/list.\-cpp}!zip@{zip}}
+\index{zip@{zip}!stack/techimet3/list/list.cpp@{stack/techimet3/list/list.\-cpp}}
+\subsubsection[{zip}]{\setlength{\rightskip}{0pt plus 5cm}char zip\mbox{[}11\mbox{]}}}\label{stack_2techimet3_2list_2list_8cpp_a029adf816b3a216e108c2fcf73476fa4}

@@ -1,0 +1,4 @@
+var searchData=
+[
+  ['jquery',['jQuery',['../html_2jquery_8js.html#aa676d9980e4aff2d9210b4c8e0e1dad9',1,'jQuery():&#160;jquery.js'],['../stack_2techimet3_2html_2jquery_8js.html#aa676d9980e4aff2d9210b4c8e0e1dad9',1,'jQuery():&#160;jquery.js']]]
+];

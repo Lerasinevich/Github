@@ -1,0 +1,189 @@
+\hypertarget{stack_2techimet3_2techimet3_2queue_8cpp}{\section{Файл stack/techimet3/techimet3/queue.cpp}
+\label{stack_2techimet3_2techimet3_2queue_8cpp}\index{stack/techimet3/techimet3/queue.\-cpp@{stack/techimet3/techimet3/queue.\-cpp}}
+}
+{\ttfamily \#include \char`\"{}stdafx.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$ctype.\-h$>$}\\*
+{\ttfamily \#include $<$locale.\-h$>$}\\*
+\subsection*{Макросы}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{stack_2techimet3_2techimet3_2queue_8cpp_a392fb874e547e582e9c66a08a1f23326}{M\-A\-X}~100
+\begin{DoxyCompactList}\small\item\em Пространство имен A. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \hyperlink{stack_2techimet3_2techimet3_2queue_8cpp_a8752bd9a5be1550b2015c97037d6cdb8}{qretrieve} (void)
+\item 
+void \hyperlink{stack_2techimet3_2techimet3_2queue_8cpp_a6fbbf03d0445e7f8077fe7dea906d673}{enter} (void)
+\item 
+void \hyperlink{stack_2techimet3_2techimet3_2queue_8cpp_a3a30ff13a00c3d0ca9fb8436cc3a45b6}{qstore} (char $\ast$q)
+\begin{DoxyCompactList}\small\item\em Вставка в очередь нового элемента  Данная функция позволяет добавить в очередь новый элемент при условии, что количество элементов не будет превышать ограничения \end{DoxyCompactList}\item 
+void \hyperlink{stack_2techimet3_2techimet3_2queue_8cpp_a373facde6fa9f194732349b755be34d3}{review} (void)
+\begin{DoxyCompactList}\small\item\em Вставка в очередь нового элемента  Данная функция позволяет добавить в очередь новый элемент при условии, что количество элементов не будет превышать ограничения \end{DoxyCompactList}\item 
+void \hyperlink{stack_2techimet3_2techimet3_2queue_8cpp_a8e0658944764b32e2f064033d66f1201}{delete\-\_\-ap} (void)
+\begin{DoxyCompactList}\small\item\em Вставка в очередь нового элемента  Данная функция позволяет просмотреть все элементы очереди по очереди \end{DoxyCompactList}\item 
+char \hyperlink{stack_2techimet3_2techimet3_2queue_8cpp_ad6179df7031edcad2f714aa1e3bc3e44}{retrieve} (void)
+\begin{DoxyCompactList}\small\item\em Удаление элемента из очереди  Данная функция позволяет удалить элемент из очереди по принципу F\-I\-F\-O. \end{DoxyCompactList}\item 
+int \hyperlink{stack_2techimet3_2techimet3_2queue_8cpp_a353674c5af92be7fb389265cde4e5e03}{\-\_\-tmain} (int argc, \-\_\-\-T\-C\-H\-A\-R $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Извлечение элемента  Данная функция позволяет извлечь элемент из очереди. Извлечение производится по принципу F\-I\-F\-O. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Переменные}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \hyperlink{stack_2techimet3_2techimet3_2queue_8cpp_ab39066f5c1086659cd6210c7bdc3063f}{p} \mbox{[}\hyperlink{techimet3_2queue_8cpp_a392fb874e547e582e9c66a08a1f23326}{M\-A\-X}\mbox{]}
+\item 
+int \hyperlink{stack_2techimet3_2techimet3_2queue_8cpp_a24f340511b1280c042f185eab3c90984}{spos} = 0
+\item 
+int \hyperlink{stack_2techimet3_2techimet3_2queue_8cpp_aeb0b0d2597e73f4e7f45b756c2ffd1bb}{rpos} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Макросы}
+\hypertarget{stack_2techimet3_2techimet3_2queue_8cpp_a392fb874e547e582e9c66a08a1f23326}{\index{stack/techimet3/techimet3/queue.\-cpp@{stack/techimet3/techimet3/queue.\-cpp}!M\-A\-X@{M\-A\-X}}
+\index{M\-A\-X@{M\-A\-X}!stack/techimet3/techimet3/queue.cpp@{stack/techimet3/techimet3/queue.\-cpp}}
+\subsubsection[{M\-A\-X}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-A\-X~100}}\label{stack_2techimet3_2techimet3_2queue_8cpp_a392fb874e547e582e9c66a08a1f23326}
+
+
+Пространство имен A. 
+
+namespace std; 
+
+\subsection{Функции}
+\hypertarget{stack_2techimet3_2techimet3_2queue_8cpp_a353674c5af92be7fb389265cde4e5e03}{\index{stack/techimet3/techimet3/queue.\-cpp@{stack/techimet3/techimet3/queue.\-cpp}!\-\_\-tmain@{\-\_\-tmain}}
+\index{\-\_\-tmain@{\-\_\-tmain}!stack/techimet3/techimet3/queue.cpp@{stack/techimet3/techimet3/queue.\-cpp}}
+\subsubsection[{\-\_\-tmain}]{\setlength{\rightskip}{0pt plus 5cm}int \-\_\-tmain (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{\-\_\-\-T\-C\-H\-A\-R $\ast$}]{argv\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{stack_2techimet3_2techimet3_2queue_8cpp_a353674c5af92be7fb389265cde4e5e03}
+
+
+Извлечение элемента  Данная функция позволяет извлечь элемент из очереди. Извлечение производится по принципу F\-I\-F\-O. 
+
+retrieve 
+\begin{DoxyParams}{Аргументы}
+{\em У} & данной функции нет параметров \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Функция возвращает указатель на элемент 
+\end{DoxyReturn}
+инициализация массива очереди
+
+инициализация счетчика
+
+вывод меню функций на экран
+
+выбор функции пользователем \hypertarget{stack_2techimet3_2techimet3_2queue_8cpp_a8e0658944764b32e2f064033d66f1201}{\index{stack/techimet3/techimet3/queue.\-cpp@{stack/techimet3/techimet3/queue.\-cpp}!delete\-\_\-ap@{delete\-\_\-ap}}
+\index{delete\-\_\-ap@{delete\-\_\-ap}!stack/techimet3/techimet3/queue.cpp@{stack/techimet3/techimet3/queue.\-cpp}}
+\subsubsection[{delete\-\_\-ap}]{\setlength{\rightskip}{0pt plus 5cm}void delete\-\_\-ap (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{stack_2techimet3_2techimet3_2queue_8cpp_a8e0658944764b32e2f064033d66f1201}
+
+
+Вставка в очередь нового элемента  Данная функция позволяет просмотреть все элементы очереди по очереди 
+
+function review 
+\begin{DoxyParams}{Аргументы}
+{\em У} & данной функции нет параметров \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Функция возвращает пустое значение 
+\end{DoxyReturn}
+инициализация дополнительного массива
+
+удаление элемента \hypertarget{stack_2techimet3_2techimet3_2queue_8cpp_a6fbbf03d0445e7f8077fe7dea906d673}{\index{stack/techimet3/techimet3/queue.\-cpp@{stack/techimet3/techimet3/queue.\-cpp}!enter@{enter}}
+\index{enter@{enter}!stack/techimet3/techimet3/queue.cpp@{stack/techimet3/techimet3/queue.\-cpp}}
+\subsubsection[{enter}]{\setlength{\rightskip}{0pt plus 5cm}void enter (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{stack_2techimet3_2techimet3_2queue_8cpp_a6fbbf03d0445e7f8077fe7dea906d673}
+выделение памяти, если возможно
+
+вставка элемента \hypertarget{stack_2techimet3_2techimet3_2queue_8cpp_a8752bd9a5be1550b2015c97037d6cdb8}{\index{stack/techimet3/techimet3/queue.\-cpp@{stack/techimet3/techimet3/queue.\-cpp}!qretrieve@{qretrieve}}
+\index{qretrieve@{qretrieve}!stack/techimet3/techimet3/queue.cpp@{stack/techimet3/techimet3/queue.\-cpp}}
+\subsubsection[{qretrieve}]{\setlength{\rightskip}{0pt plus 5cm}char $\ast$ qretrieve (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{stack_2techimet3_2techimet3_2queue_8cpp_a8752bd9a5be1550b2015c97037d6cdb8}
+увеличение счетчика
+
+извлечение элемента \hypertarget{stack_2techimet3_2techimet3_2queue_8cpp_a3a30ff13a00c3d0ca9fb8436cc3a45b6}{\index{stack/techimet3/techimet3/queue.\-cpp@{stack/techimet3/techimet3/queue.\-cpp}!qstore@{qstore}}
+\index{qstore@{qstore}!stack/techimet3/techimet3/queue.cpp@{stack/techimet3/techimet3/queue.\-cpp}}
+\subsubsection[{qstore}]{\setlength{\rightskip}{0pt plus 5cm}void qstore (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{q}
+\end{DoxyParamCaption}
+)}}\label{stack_2techimet3_2techimet3_2queue_8cpp_a3a30ff13a00c3d0ca9fb8436cc3a45b6}
+
+
+Вставка в очередь нового элемента  Данная функция позволяет добавить в очередь новый элемент при условии, что количество элементов не будет превышать ограничения 
+
+function enter 
+\begin{DoxyParams}{Аргументы}
+{\em У} & данной функции нет параметров \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Функция возвращает пустое значение 
+\end{DoxyReturn}
+добавление элемента
+
+увеличение счетчика \hypertarget{stack_2techimet3_2techimet3_2queue_8cpp_ad6179df7031edcad2f714aa1e3bc3e44}{\index{stack/techimet3/techimet3/queue.\-cpp@{stack/techimet3/techimet3/queue.\-cpp}!retrieve@{retrieve}}
+\index{retrieve@{retrieve}!stack/techimet3/techimet3/queue.cpp@{stack/techimet3/techimet3/queue.\-cpp}}
+\subsubsection[{retrieve}]{\setlength{\rightskip}{0pt plus 5cm}char retrieve (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{stack_2techimet3_2techimet3_2queue_8cpp_ad6179df7031edcad2f714aa1e3bc3e44}
+
+
+Удаление элемента из очереди  Данная функция позволяет удалить элемент из очереди по принципу F\-I\-F\-O. 
+
+function delete\-\_\-ap 
+\begin{DoxyParams}{Аргументы}
+{\em У} & данной функции нет параметров \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Функция возвращает пустое значение 
+\end{DoxyReturn}
+\hypertarget{stack_2techimet3_2techimet3_2queue_8cpp_a373facde6fa9f194732349b755be34d3}{\index{stack/techimet3/techimet3/queue.\-cpp@{stack/techimet3/techimet3/queue.\-cpp}!review@{review}}
+\index{review@{review}!stack/techimet3/techimet3/queue.cpp@{stack/techimet3/techimet3/queue.\-cpp}}
+\subsubsection[{review}]{\setlength{\rightskip}{0pt plus 5cm}void review (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{stack_2techimet3_2techimet3_2queue_8cpp_a373facde6fa9f194732349b755be34d3}
+
+
+Вставка в очередь нового элемента  Данная функция позволяет добавить в очередь новый элемент при условии, что количество элементов не будет превышать ограничения 
+
+function qstore 
+\begin{DoxyParams}{Аргументы}
+{\em У} & данной функции нет параметров \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Функция возвращает пустое значение 
+\end{DoxyReturn}
+инициализация счетчика 
+
+\subsection{Переменные}
+\hypertarget{stack_2techimet3_2techimet3_2queue_8cpp_ab39066f5c1086659cd6210c7bdc3063f}{\index{stack/techimet3/techimet3/queue.\-cpp@{stack/techimet3/techimet3/queue.\-cpp}!p@{p}}
+\index{p@{p}!stack/techimet3/techimet3/queue.cpp@{stack/techimet3/techimet3/queue.\-cpp}}
+\subsubsection[{p}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ p\mbox{[}{\bf M\-A\-X}\mbox{]}}}\label{stack_2techimet3_2techimet3_2queue_8cpp_ab39066f5c1086659cd6210c7bdc3063f}
+\hypertarget{stack_2techimet3_2techimet3_2queue_8cpp_aeb0b0d2597e73f4e7f45b756c2ffd1bb}{\index{stack/techimet3/techimet3/queue.\-cpp@{stack/techimet3/techimet3/queue.\-cpp}!rpos@{rpos}}
+\index{rpos@{rpos}!stack/techimet3/techimet3/queue.cpp@{stack/techimet3/techimet3/queue.\-cpp}}
+\subsubsection[{rpos}]{\setlength{\rightskip}{0pt plus 5cm}int rpos = 0}}\label{stack_2techimet3_2techimet3_2queue_8cpp_aeb0b0d2597e73f4e7f45b756c2ffd1bb}
+\hypertarget{stack_2techimet3_2techimet3_2queue_8cpp_a24f340511b1280c042f185eab3c90984}{\index{stack/techimet3/techimet3/queue.\-cpp@{stack/techimet3/techimet3/queue.\-cpp}!spos@{spos}}
+\index{spos@{spos}!stack/techimet3/techimet3/queue.cpp@{stack/techimet3/techimet3/queue.\-cpp}}
+\subsubsection[{spos}]{\setlength{\rightskip}{0pt plus 5cm}int spos = 0}}\label{stack_2techimet3_2techimet3_2queue_8cpp_a24f340511b1280c042f185eab3c90984}

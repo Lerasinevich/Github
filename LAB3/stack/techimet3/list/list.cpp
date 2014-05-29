@@ -38,7 +38,7 @@ void sls_store(struct address *i,
 
   p = *start;
 
-  if(!*last) { /* первый элемент в списке */
+  if(!*last) {/// первый элемент в списке */
     i->next = NULL;
     *last = i;
     *start = i;
@@ -52,17 +52,17 @@ void sls_store(struct address *i,
       p = p->next;
     }
     else {
-      if(old) { /* вставка в середину */
+      if(old) { ///вставка в середину */
         old->next = i;
         i->next = p;
         return;
       }
-      i->next = p; /* вставка в начало */
+      i->next = p;/// вставка в начало */
       *start = i;
       return;
     }
   }
-  (*last)->next = i; /* вставка в конец */
+  (*last)->next = i; /// вставка в конец */
   i->next = NULL;
   *last = i;
 }
